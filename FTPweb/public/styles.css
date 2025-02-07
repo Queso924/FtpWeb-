@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo con gradiente */
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para input file oculto */
+input[type="file"] {
+  display: none;
+}
+
+/* Botón personalizado para selección de archivo */
+.file-label {
+  background: #ff7eb3;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.file-label:hover {
+  background: #ff558a;
+  transform: scale(1.05);
+}
+
+/* Nombre del archivo seleccionado */
+#file-name {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Botón de subir archivo */
+input[type="submit"] {
+  background: #2ecc71;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+input[type="submit"]:hover {
+  background: #27ae60;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Diseño responsivo */
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+.container {
+  display: inline-block;
+  text-align: left;
+}
+.download-link, .copy-button {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.copy-button {
+  background-color: #008CBA;
+  border: none;
+  cursor: pointer;
+}
+.copy-button:hover, .download-link:hover {
+  background-color: #45a049;
+}
+.countdown {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
